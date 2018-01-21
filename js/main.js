@@ -1,14 +1,6 @@
 $(document).ready(function(){
-  
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators:true,
-    rotate:true
+  $('.slider').slider({
+    'indicators':true,
+    'height':500,
   });
-  autoplay()   
-  function autoplay() {
-      $('.carousel').carousel('next');
-      setTimeout(autoplay, 4500);
-  }
-
 });

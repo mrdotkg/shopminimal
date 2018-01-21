@@ -1,5 +1,5 @@
 
-/* customized container width to 90% */
+/* customized container width to 90% ******************************************/
 .container {
     margin: 0 auto;
     max-width: 1280px;
@@ -14,25 +14,54 @@
     .container {
     width: 70%;
     }
+/******************************************************************************/
 
-
-/* customized navbar height */
+/* customized navbar height ***************************************************/
 nav,.categories { 
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+nav {
+    height: 30px;
+    line-height: 30px;
 }
 
-/* customized navbar text colors */
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 30px;
+    line-height: 30px;
+}
+
+nav .button-collapse i {
+    height: 30px;
+    line-height: 30px;
+}
+
+nav .brand-logo { 
+    font-size: 3rem; 
+    font-family: 'Pacifico', cursive;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+/******************************************************************************/
+
+/* customized navbar text colors **********************************************/
 nav ul li a{
     color: black;
   }
+/******************************************************************************/
 
-/* customize brand logo size */
+/* customize brand logo size **************************************************/
 .brand-logo > img {
     width: 250px;
 }
+/******************************************************************************/
 
- /* smooth underline on hover */
+ /* smooth underline on hover *************************************************/
 nav ul li a::after {
     content: '';
     display: block;
@@ -43,10 +72,112 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
     width: 100%;
-    transition: width .3s;
+    transition: width .2s;
 }
+/******************************************************************************/
 
-/* change hover color to a links */
+/* change hover color to a links **********************************************/
 nav ul a:hover {
     background-color: white;
 }
+/******************************************************************************/
+
+/* divider *********************************************************************/
+.divider-left {
+    padding-left: 5%;
+}
+
+.divider-right{
+    padding-right: 5%;
+}
+
+.lable-divider {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: table;
+}
+.divider-line, .lable-divider-content {
+    vertical-align: middle;
+    display: table-cell;
+    width: 30%;
+}
+
+.divider-line span {
+    border-top: 1px solid;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.lable-divider-content span {
+    display: block;
+    white-space: nowrap;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid;
+    box-shadow: 4px 4px 0 0 #eee;
+    -webkit-box-shadow: 4px 4px 0 0 #eee;
+}
+/******************************************************************************/
+
+/* card title and subtitles ***************************************************/
+.card-title{
+    background: #fff;
+    display: block;
+    position: absolute !important;
+    line-height: 1;
+    margin: 0;
+    padding: 15px 15px 30px 15px !important;
+    top: 50%;
+    left: 50% !important;
+    bottom: 50% !important;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 1.2rem !important;
+}
+.card-sub-title{    
+    font-size: 1rem !important;
+}
+/******************************************************************************/
+
+/* slider and indicators ******************************************************/
+.slider .slides li img {
+    background-size:30% auto;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slider .slides {
+    background-color: #fff;
+    background-image: url("../images/pattern.png");
+    background-size: 80%;
+    background-position: center;
+}
+.slider{
+    margin-bottom: 20px;
+}
+.slider .slides li .caption {
+    left: 10%;
+}
+.inner-outline {
+    outline: 2px solid rgba(255, 255, 255, .8);
+    outline-offset: -40px;
+}
+.slider .indicators .indicator-item {
+    background-color: #eee;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  .slider .indicators .indicator-item.active {
+    background-color: #ffffff;
+  }
+  
+  .slider .indicators {
+    bottom: 65px;
+    z-index: 100;
+  }
+/******************************************************************************/
