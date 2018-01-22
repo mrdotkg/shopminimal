@@ -1,8 +1,8 @@
-/* html *{
+html *{
     font-family: 'Pacifico', cursive;
     text-transform: capitalize;
     letter-spacing: 0.05rem;
-} */
+}
 /* customized container width to 90% ******************************************/
 .container {
     margin: 0 auto;
