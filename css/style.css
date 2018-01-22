@@ -228,14 +228,13 @@ nav ul a:hover {
 ul.dropdown-content{
     background-color: #eee;
     margin-top: 2px;
-    width: 200px;
-    padding: 0 !important;
-    margin: 0 !important;
 
 }
 
 .dropdown-content li{
     height:10px !important;
+    width: fit-content;
+
 }
 .dropdown-content li a{
     background-color: #eee;
