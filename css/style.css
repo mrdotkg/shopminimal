@@ -223,4 +223,26 @@ nav ul a:hover {
     bottom: 65px;
     z-index: 100;
   }
-/* **************************************************************************** */
+/***************************************************************************** */
+/* dropdown */
+ul.dropdown-content{
+    background-color: #eee;
+    margin-top: 2px;
+    width: 200px;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.dropdown-content li{
+    height:10px !important;
+}
+.dropdown-content li a{
+    background-color: #eee;
+    color: #9e9e9e;
+
+
+}
+.dropdown-content li a:hover{
+    background-color: #eee;    
+}
